@@ -2,6 +2,9 @@
 Thumbs.db
 ehthumbs.db
 
+# release dir
+Release/
+
 # Folder config file
 Desktop.ini
 
