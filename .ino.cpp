@@ -2,7 +2,7 @@
 //This is a automatic generated file
 //Please do not modify this file
 //If you touch this file your change will be overwritten during the next build
-//This file has been generated on 2017-06-29 09:47:13
+//This file has been generated on 2017-06-30 22:19:09
 
 #include "Arduino.h"
 #include "MPU9250MagCali.h"

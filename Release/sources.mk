@@ -38,5 +38,7 @@ SUBDIRS := \
 . \
 core/core \
 libraries/EigenCalcForARM \
+libraries/LowPassFilter \
+libraries/MPU9250SPI \
 libraries/SPI/src \
 

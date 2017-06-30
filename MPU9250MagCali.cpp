@@ -35,11 +35,11 @@ void MPU9250MagCali::collect_X_Positive()
 {
 	for(int i=0; i<this->sampleNumberForXYZ; i++)
 	{
-		p_9250SPI->read_Mag_Data();
+		p_9250SPI->read_Mag_Data_Filtered();
 
-		mag_Original_X_Positive[i][0] = (p_9250SPI->mag_X_H << 8) | p_9250SPI->mag_X_L;
-		mag_Original_X_Positive[i][1] = (p_9250SPI->mag_Y_H << 8) | p_9250SPI->mag_Y_L;
-		mag_Original_X_Positive[i][2] = (p_9250SPI->mag_Z_H << 8) | p_9250SPI->mag_Z_L;
+		mag_Original_X_Positive[i][0] = p_9250SPI->mag_X_filtered;
+		mag_Original_X_Positive[i][1] = p_9250SPI->mag_Y_filtered;
+		mag_Original_X_Positive[i][2] = p_9250SPI->mag_Z_filtered;
 
 		delay(this->sampleTime);
 	}
@@ -52,11 +52,11 @@ void MPU9250MagCali::collect_X_Negative()
 {
 	for(int i=0; i<this->sampleNumberForXYZ; i++)
 	{
-		p_9250SPI->read_Mag_Data();
+		p_9250SPI->read_Mag_Data_Filtered();
 
-		mag_Original_X_Negative[i][0] = (p_9250SPI->mag_X_H << 8) | p_9250SPI->mag_X_L;
-		mag_Original_X_Negative[i][1] = (p_9250SPI->mag_Y_H << 8) | p_9250SPI->mag_Y_L;
-		mag_Original_X_Negative[i][2] = (p_9250SPI->mag_Z_H << 8) | p_9250SPI->mag_Z_L;
+		mag_Original_X_Negative[i][0] = p_9250SPI->mag_X_filtered;
+		mag_Original_X_Negative[i][1] = p_9250SPI->mag_Y_filtered;
+		mag_Original_X_Negative[i][2] = p_9250SPI->mag_Z_filtered;
 
 		delay(this->sampleTime);
 	}
@@ -69,11 +69,11 @@ void MPU9250MagCali::collect_Y_Positive()
 {
 	for(int i=0; i<this->sampleNumberForXYZ; i++)
 	{
-		p_9250SPI->read_Mag_Data();
+		p_9250SPI->read_Mag_Data_Filtered();
 
-		mag_Original_Y_Positive[i][0] = (p_9250SPI->mag_X_H << 8) | p_9250SPI->mag_X_L;
-		mag_Original_Y_Positive[i][1] = (p_9250SPI->mag_Y_H << 8) | p_9250SPI->mag_Y_L;
-		mag_Original_Y_Positive[i][2] = (p_9250SPI->mag_Z_H << 8) | p_9250SPI->mag_Z_L;
+		mag_Original_Y_Positive[i][0] = p_9250SPI->mag_X_filtered;
+		mag_Original_Y_Positive[i][1] = p_9250SPI->mag_Y_filtered;
+		mag_Original_Y_Positive[i][2] = p_9250SPI->mag_Z_filtered;
 
 		delay(this->sampleTime);
 	}
@@ -86,11 +86,11 @@ void MPU9250MagCali::collect_Y_Negative()
 {
 	for(int i=0; i<this->sampleNumberForXYZ; i++)
 	{
-		p_9250SPI->read_Mag_Data();
+		p_9250SPI->read_Mag_Data_Filtered();
 
-		mag_Original_Y_Negative[i][0] = (p_9250SPI->mag_X_H << 8) | p_9250SPI->mag_X_L;
-		mag_Original_Y_Negative[i][1] = (p_9250SPI->mag_Y_H << 8) | p_9250SPI->mag_Y_L;
-		mag_Original_Y_Negative[i][2] = (p_9250SPI->mag_Z_H << 8) | p_9250SPI->mag_Z_L;
+		mag_Original_Y_Negative[i][0] = p_9250SPI->mag_X_filtered;
+		mag_Original_Y_Negative[i][1] = p_9250SPI->mag_Y_filtered;
+		mag_Original_Y_Negative[i][2] = p_9250SPI->mag_Z_filtered;
 
 		delay(this->sampleTime);
 	}
@@ -103,11 +103,11 @@ void MPU9250MagCali::collect_Z_Positive()
 {
 	for(int i=0; i<this->sampleNumberForXYZ; i++)
 	{
-		p_9250SPI->read_Mag_Data();
+		p_9250SPI->read_Mag_Data_Filtered();
 
-		mag_Original_Z_Positive[i][0] = (p_9250SPI->mag_X_H << 8) | p_9250SPI->mag_X_L;
-		mag_Original_Z_Positive[i][1] = (p_9250SPI->mag_Y_H << 8) | p_9250SPI->mag_Y_L;
-		mag_Original_Z_Positive[i][2] = (p_9250SPI->mag_Z_H << 8) | p_9250SPI->mag_Z_L;
+		mag_Original_Z_Positive[i][0] = p_9250SPI->mag_X_filtered;
+		mag_Original_Z_Positive[i][1] = p_9250SPI->mag_Y_filtered;
+		mag_Original_Z_Positive[i][2] = p_9250SPI->mag_Z_filtered;
 
 		delay(this->sampleTime);
 	}
@@ -120,11 +120,11 @@ void MPU9250MagCali::collect_Z_Negative()
 {
 	for(int i=0; i<this->sampleNumberForXYZ; i++)
 	{
-		p_9250SPI->read_Mag_Data();
+		p_9250SPI->read_Mag_Data_Filtered();
 
-		mag_Original_Z_Negative[i][0] = (p_9250SPI->mag_X_H << 8) | p_9250SPI->mag_X_L;
-		mag_Original_Z_Negative[i][1] = (p_9250SPI->mag_Y_H << 8) | p_9250SPI->mag_Y_L;
-		mag_Original_Z_Negative[i][2] = (p_9250SPI->mag_Z_H << 8) | p_9250SPI->mag_Z_L;
+		mag_Original_Z_Negative[i][0] = p_9250SPI->mag_X_filtered;
+		mag_Original_Z_Negative[i][1] = p_9250SPI->mag_Y_filtered;
+		mag_Original_Z_Negative[i][2] = p_9250SPI->mag_Z_filtered;
 
 		delay(this->sampleTime);
 	}
@@ -137,11 +137,11 @@ void MPU9250MagCali::collect_Random()
 {
 	for(int i=0; i<this->sampleNumberForRandom; i++)
 	{
-		p_9250SPI->read_Mag_Data();
+		p_9250SPI->read_Mag_Data_Filtered();
 
-		mag_Original_Random[i][0] = (p_9250SPI->mag_X_H << 8) | p_9250SPI->mag_X_L;
-		mag_Original_Random[i][1] = (p_9250SPI->mag_Y_H << 8) | p_9250SPI->mag_Y_L;
-		mag_Original_Random[i][2] = (p_9250SPI->mag_Z_H << 8) | p_9250SPI->mag_Z_L;
+		mag_Original_Random[i][0] = p_9250SPI->mag_X_filtered;
+		mag_Original_Random[i][1] = p_9250SPI->mag_Y_filtered;
+		mag_Original_Random[i][2] = p_9250SPI->mag_Z_filtered;
 
 		delay(this->sampleTime);
 	}

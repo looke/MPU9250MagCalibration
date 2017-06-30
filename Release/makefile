@@ -10,6 +10,8 @@ RM := del
 -include sources.mk
 -include subdir.mk
 -include libraries\SPI\src\subdir.mk
+-include libraries\MPU9250SPI\subdir.mk
+-include libraries\LowPassFilter\subdir.mk
 -include libraries\EigenCalcForARM\subdir.mk
 -include core\core\subdir.mk
 -include objects.mk

@@ -26,6 +26,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/SPI}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/SPI/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/EigenCalcForARM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/LowPassFilter}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/MPU9250SPI}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.cpp.sketch.input.515539417" name="CPP source files" superClass="io.sloeber.compiler.cpp.sketch.input"/>
 							</tool>
@@ -36,6 +38,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/SPI}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/SPI/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/EigenCalcForARM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/LowPassFilter}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/MPU9250SPI}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.c.sketch.input.1191691832" name="C Source Files" superClass="io.sloeber.compiler.c.sketch.input"/>
 							</tool>
@@ -46,6 +50,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/SPI}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/SPI/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/EigenCalcForARM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/LowPassFilter}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/MPU9250MagCalibration/libraries/MPU9250SPI}&quot;"/>
 								</option>
 								<inputType id="io.sloeber.compiler.S.sketch.input.659502957" name="Assembly source files" superClass="io.sloeber.compiler.S.sketch.input"/>
 							</tool>

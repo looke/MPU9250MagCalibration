@@ -12,6 +12,7 @@ MPU9250MagCali.cpp.o: ..\MPU9250MagCali.cpp ..\MPU9250MagCali.h \
  D:\Develop\sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.6.19\cores\arduino/Arduino.h \
  D:\Develop\sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.6.19\variants\standard/pins_arduino.h \
  D:\Develop\sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.6.19\libraries\SPI\src/SPI.h \
+ D:\looke\Arduino\libraries\LowPassFilter/LowPassFilterFirstOrder.h \
  D:\looke\CppWorkspace\EigenCalcForARM\src/StaticMatrix.h \
  D:\looke\CppWorkspace\EigenCalcForARM\src/BasicMatrix.h \
  D:\looke\CppWorkspace\EigenCalcForARM\src/BasicVector.h \
@@ -44,6 +45,8 @@ D:\Develop\sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.6.19\cores\ardu
 D:\Develop\sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.6.19\variants\standard/pins_arduino.h:
 
 D:\Develop\sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.6.19\libraries\SPI\src/SPI.h:
+
+D:\looke\Arduino\libraries\LowPassFilter/LowPassFilterFirstOrder.h:
 
 D:\looke\CppWorkspace\EigenCalcForARM\src/StaticMatrix.h:
 
